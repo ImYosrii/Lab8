@@ -73,8 +73,23 @@ public class CustomList extends ArrayAdapter<City> {
         }
         return false;
     }
+
+    /**
+     * deletes given city from the list if exists
+     * @param city
+     */
     public void delete(City city){
         if(this.hasCity(city)) cities.remove(city);
         else throw new RuntimeException();
     }
+
+    /**
+     * counts how many cites we have in a list
+     * @return
+     */
+    public int countCities() {
+
+        return 0;
+    }
+
 }
